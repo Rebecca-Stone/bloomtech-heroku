@@ -13,6 +13,7 @@ server.use(cors());
 server.get("/", async (req, res, next) => {
   // res.json('Hello, World!');
   res.json({ MESSAGE: process.env.MESSAGE });
+  console.log('sanity check')
 });
 
 module.exports = server;
