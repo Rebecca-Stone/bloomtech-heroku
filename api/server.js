@@ -6,9 +6,12 @@ const cors = require("cors");
 const server = express();
 
 server.use(express.json());
+// these are third party middleware
 server.use(helmet());
 server.use(morgan("dev"));
 server.use(cors());
+
+// anything you can do with a promise, you can use async/await
 
 // this is async
 function f(a, b) {
