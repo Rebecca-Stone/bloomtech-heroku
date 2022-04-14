@@ -1,0 +1,7 @@
+
+npx gitignore node // this makes a git ignore file
+npm init -y
+npx eslint --init 
+
+
+npm i express // this is to install express
